@@ -1,0 +1,51 @@
+{% assign wordcount = page.content | number_of_words %}
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom" role="navigation">
+            <div class="container">
+                <a href="{{ site.baseurl }}/">Projects</a>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <div class="page-content">
+            <div class="wrapper">
+                <article class="post">
+                    <div class="post-content">
+                        <!-- Intro Header -->
+                        <header class="intro">
+                            <div class="intro-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-2 intro-bg">
+                                            <h1>
+                                                {{ page.title }}
+                                            </h1>
+                                            <div class="post-details intro-text">
+                                                {% for tag in page.tags %}
+                                                    <a href="{{ site.baseurl }}/#{{tag}}">{{tag}}</a>{% unless post.tags.size == 1 %}{% if forloop.rindex0 == 1 %} &{% elsif forloop.last == false %}, {% endif %}{% endunless %}
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+                        <section class="content-section">
+                            <div class="container">
+                                <div class="col-lg-10 col-lg-offset-1">
+                                    {{ content }}
+                                </div>
+                            </div>
+                        </section>                        
+                    </div>
+                </article>
+            </div>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>
+

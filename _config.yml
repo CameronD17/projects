@@ -1,0 +1,34 @@
+# Site settings
+title: Projects | Cameron Doyle
+baseurl: ""
+url: "http://projects.camerondoyle.co.uk"
+homeurl: "http://camerondoyle.co.uk"
+permalink: /:title/
+excerpt_separator: <!-- Read More -->
+
+author:
+    firstname: Cameron
+    surname: Doyle
+    fullname: Cameron Doyle
+    dateofbirth: 1992-02-17 00:00:00 +0000
+    email: hello@camerondoyle.co.uk
+    twitter: CameronD17
+    github: CameronD17
+    facebook: cameron.doyle
+    linkedin: camerond17
+    instagram: camerond17
+    stackoverflow: 1669993/camerond17
+    
+description: > 
+  List of personal side projects by Cameron Doyle, a  
+  software engineer based in Edinburgh, Scotland.
+
+markdown: kramdown
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  
+sass:
+    style: compressed
+    sass_dir: ./assets/stylesheets

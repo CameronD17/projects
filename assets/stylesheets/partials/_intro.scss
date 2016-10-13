@@ -1,0 +1,19 @@
+.intro {
+    display: table;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    
+    p, a {
+        text-align: center;
+    }
+    
+    .intro-body {
+        padding: 100px 0 0 0;
+        vertical-align: middle;
+        
+        .intro-text {
+            font-size: 20px;    
+        }
+    }
+}
