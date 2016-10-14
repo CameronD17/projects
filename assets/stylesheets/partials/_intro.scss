@@ -3,17 +3,14 @@
     width: 100%;
     padding: 0;
     height: auto;
+    padding: 100px 0 50px 0;
+    vertical-align: middle;
     
     p, a {
         text-align: center;
     }
     
-    .intro-body {
-        padding: 100px 0 0 0;
-        vertical-align: middle;
-        
-        .intro-text {
-            font-size: 20px;    
-        }
+    .intro-text {
+        font-size: 20px;    
     }
 }

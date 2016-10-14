@@ -1,6 +1,6 @@
-# [blog.camerondoyle.co.uk] (http://blog.camerondoyle.co.uk)
+# [projects.camerondoyle.co.uk] (http://projects.camerondoyle.co.uk)
 
-blog.camerondoyle.co.uk is a list of my personal side-projects. The design is a fork of [my blog](http://blog.camerondoyle.co.uk) ([source](http://github.com/CameronD17/blog)). My target is to complete one side project per quarter. 
+projects.camerondoyle.co.uk is a list of my personal side-projects. The design is a fork of [my blog](http://blog.camerondoyle.co.uk) ([source](http://github.com/CameronD17/blog)). My target is to complete one side project per quarter. 
 
 The site is generated using [Jekyll](http://jekyllrb.com), and built on the [Bootstrap](http://getbootstrap.com/) framework.
 

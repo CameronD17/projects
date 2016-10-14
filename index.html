@@ -11,30 +11,28 @@ layout:     page
 
 <!-- Intro Header -->
 <header class="intro">
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <h1>Cameron Doyle</h1>
-                    <p>This is a chronological history of my development side projects. As of 2016, my aim is to complete one side project every three months.</p>
-                </div>
-            </div>
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+            <h1>Cameron Doyle</h1>
+            <p>This is a chronological portfolio of my development side projects. As of 2016, my aim is to complete one side project every three months.</p>
         </div>
     </div>
 </header>
 
-<section class="content-section text-center">
-    <div class="row">
+<section class="text-center container">
     <div class="col-lg-6 col-lg-offset-3">
         <table>
             {% for post in site.posts %}
-                <tbody>
+                <tbody class="project-entry">
                     <tr>
-                        <td class="project-title"><a href="{{ post.url }}">{{ post.title }}</a></td>                        
-                        <td class="project-year">{{ post.year }}</td>
+                        <td class="title"><a href="{{ post.hosturl }}">{{ post.title }}</a></td>                        
+                        <td class="year">{{ post.year }}</td>
                     </tr>
                     <tr>
-                        <td class="project-description" colspan="2">{{ post.excerpt | strip_html }} <a href="{{ post.source }}">View the source code here <i class="fa fa-github fa-fw"></i></a></td>
+                        <td class="description" colspan="2">{{ post.excerpt | strip_html }}</td>
+                    </tr>
+                    <tr>
+                        <td class="source" colspan="2"><a href="{{ post.source }}">View the source code here <i class="fa fa-github fa-fw"></i></a></td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -45,12 +43,13 @@ layout:     page
                     </tr>
                     {% if forloop.last == false %}
                     <tr>
-                        <td colspan="2"><div class="post-divider"></div></td>
+                        <td colspan="2">
+                            <div class="post-divider"></div>
+                        </td>
                     </tr>
                     {% endif %}
                 </tbody>
             {% endfor %}
         </table>
-    </div>
     </div>
 </section>

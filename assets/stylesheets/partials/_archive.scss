@@ -1,21 +1,33 @@
-.project-title {
-    margin-bottom: 25px;
-    font-weight: 700;
-    text-align: left;
-}
-
-.project-year {
-    font-size: 20px;
-    font-weight: bold;
-    vertical-align: middle !important;
-    text-align: right;
-    width: 25%;
-}
-
-.project-description {
-    font-size: 16px;
-    font-style: italic;
-    text-align: left;
+.project-entry {    
+    .title {
+        margin-bottom: 25px;
+        font-weight: 700;
+        text-align: left;
+    }
+    
+    .year {
+        font-size: 20px;
+        font-weight: bold;
+        vertical-align: middle !important;
+        text-align: right;
+        width: 25%;
+    }
+    
+    .description {
+        font-size: 16px;
+        font-style: italic;
+        text-align: left;
+    }
+    
+    .source {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    tr > td {
+        padding-bottom: 8px;
+    }
 }
 
 .post-divider{
