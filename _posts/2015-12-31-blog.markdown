@@ -1,5 +1,4 @@
 ---
-layout:     post
 title:      "Blog"
 tags:       HTML5 Sass Jekyll JavaScript jQuery
 year:       2016

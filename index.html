@@ -25,14 +25,27 @@ layout:     page
             {% for post in site.posts %}
                 <tbody class="project-entry">
                     <tr>
-                        <td class="title"><a href="{{ post.hosturl }}">{{ post.title }}</a></td>                        
+                        <td class="title"><a href="{{ post.hosturl }}">{{ post.title }}</a></td>
                         <td class="year">{{ post.year }}</td>
                     </tr>
                     <tr>
-                        <td class="description" colspan="2">{{ post.excerpt | strip_html }}</td>
+                        <td class="description" colspan="2">
+                            {{ post.excerpt | strip_html }}
+                        </td>
                     </tr>
                     <tr>
-                        <td class="source" colspan="2"><a href="{{ post.source }}">View the source code here <i class="fa fa-github fa-fw"></i></a></td>
+                        {% if post.blog %}
+                        <td class="source">
+                            <a href="{{ post.source }}">View the source code here <i class="fa fa-github fa-fw"></i></a>
+                        </td>
+                        <td class="blog-link">
+                            <a href="http://blog.camerondoyle.co.uk/{{ post.blog }}">Read the blog</a>.
+                        </td>
+                        {% else %}
+                        <td class="source" colspan="2">
+                            <a href="{{ post.source }}">View the source code here <i class="fa fa-github fa-fw"></i></a>
+                        </td>
+                        {% endif %}                        
                     </tr>
                     <tr>
                         <td colspan="2">
